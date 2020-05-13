@@ -77,12 +77,7 @@ export default class List extends React.Component {
                     <td>{data.Description}</td>
                     <td>{data.Author}</td>
                     <td>
-                      <button
-                        onClick={() => this.handleUpdateClick(data)}
-                        class="btn btn-success"
-                      >
-                        Update
-                      </button>
+                      <Link to={`/edit/${data.Id}`} class="btn btn-success">Edit</Link>&nbsp;
                     </td>
                     <td>
                       <button

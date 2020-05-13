@@ -34,7 +34,8 @@ export default class Create extends React.Component {
           description: "",
           author: "",
         });
-        this.props.history.push("/");
+        this.props.history.push("/list");
+        alert("Berhasil Tambah Data");
       })
       .catch((error) => {
         console.error("Error adding document: ", error);
